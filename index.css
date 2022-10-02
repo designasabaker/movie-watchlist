@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: inter, sans-serif;
+    background-color: none;
+}
+
+header {
+    position: relative;
+    width: 100vw;
+    height: 30vh;
+    background: url(image.png);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header .title-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .title-box h1 {
+    padding-left: 5vw;
+    color: white;
+}
+
+header .title-box a {
+    padding-right: 5vw;
+    color: white;
+    text-decoration: none;
+}
+
+header .search-bar {
+    position: absolute;
+    bottom: -10px;
+
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /*When I make the form narrow, the button goes below the input box. May I ask if there is any good solution?*/
+}
+
+header .search-bar input {
+    width: 300px;
+    height: 20px;
+    padding: 0;
+    padding-left: 5px;
+    margin: 0;
+    border: 1px solid grey;
+    background: #f1f1f1;
+
+    float: left;
+}
+
+header .search-bar button {
+    width: 50px;
+    height: 22px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid grey;
+    border-left: none;
+    background: #f1f1f1;
+
+    float: left;
+}
+
+main .movie-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
+
+main .movie-card-container .searchNullMsg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+
+    font-size: 1.5em;
+    color: darkgray;
+}
+
+main .movie-card-container .movie-card {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+main .movie-card-container .movie-card .poster img {
+    width: 100px;
+}
+
+main .movie-card-container .movie-card .movie-info {
+    bottom: 0;
+}
+
+.add-btn {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
